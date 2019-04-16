@@ -1,0 +1,103 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: #EEEEEE;
+}
+header{
+	min-width: 1024px;
+	width: auto;
+	height: 157px;
+	background: rgb(31,77,120);
+	color: white;
+}
+.jianjie-body{
+	background: white;
+	margin: 0 auto;
+	width: 1024px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.02), 0 4px 8px rgba(0,0,0,.02);
+}
+.header-left{
+	width: 300px;
+	height: 137px;
+	margin-left: 80px;
+	float: left;
+}
+.header-left-top{
+	padding-top: 20px;
+	font-family: "微软雅黑";
+	font-size: 33px;
+	width: 300px;
+	height: 50px;
+	margin-bottom: 25px;
+}
+.header-left-bottom{
+	width: 300px;d
+	font-family: "微软雅黑";
+	height: 50px;
+	font-size: 16px;
+	
+}
+.header-right-top{
+	float: right;
+	width: 250px;
+	height: 137px;
+	font-size: 15px;
+	color: white;
+	font-family: "微软雅黑";
+	margin-top: 25px;
+	
+}
+.header-right-top li{
+	width: 200px;
+	text-decoration: none;
+	list-style: none;
+	line-height: 100%;
+	margin-top: 8px;
+}
+.header-right-top img{
+	width: 33px;
+	height: 107px;
+	float: left;
+}
+.header-right-top span{
+	float: right;
+	width: 150px;
+	height: 26px;
+	
+}
+.edu-content{
+	min-width: 864px;
+	width: auto;
+	min-height: 120px;
+	margin-left:80px ;
+	margin-right: 80px;
+}
+.edu-title{
+	min-width: 864px;
+	width: auto;
+	height: 50px;
+	margin-top: 20px;
+	border-bottom: 1px solid #4A4A4A;
+}
+.edu-title img{
+	float: left;
+	width: 47px;
+	height: 47px;
+}
+.edu-title span{
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(31,77,120);
+	font-family: "微软雅黑";
+	float: left;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+.edu-body-p{
+	line-height: 150%;
+	color: #4A4A4A;
+}
+.edu-body-p li{
+	
+	padding-left: 30px;
+}
