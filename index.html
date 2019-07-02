@@ -3,127 +3,168 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>静态页面</title>
+		<style type="text/css">
+			#printjl {
+				z-index: 2;
+				position: fixed;
+				bottom: 100px;
+				right: 80px;
+				font-size: 50px;
+				cursor: pointer;
+			}
+
+			@media print {
+
+				input,
+				.noprint {
+					display: none
+				}
+
+				.printonly {
+					display: block;
+					width: 50%
+				}
+			}
+		</style>
+		<title>简历</title>
+		<link rel="icon" href="img/icon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-
+	<script>
+		function printpage() {
+			window.print();
+		}
+	</script>
 	<body>
 		<div class="jianjie-body">
-		<div style="width: 1024px;height: 40px;"></div>
-		<header>
-			<div class="header-left">
-				<div class="header-left-top">
-					冯亚辉
+			<div style="width: 1024px;height: 40px;"></div>
+			<header>
+				<div class="header-left">
+					<div class="header-left-top">
+						冯亚辉
+					</div>
+					<div class="header-left-bottom">
+						求职意向：java后端开发 <br>
+						个人博客：cnblogs.com/Congratulate
+					</div>
+
 				</div>
-				<div class="header-left-bottom">
-					求职意向：java后端开发 <br>
-					个人博客：<a url="blog.csdn.net/qq_35659877">blog.csdn.net/qq_35659877</a>
+				<div class="header-right-top">
+					<img src="img/img.png" />
+					<li> <span>23岁</span> </li>
+					<li><span>苏州市吴中区</span></li>
+					<li> <span>15262149322</span></li>
+					<li> <span>1987281849@qq.com</span></li>
 				</div>
+			</header>
 
+			<div class="edu-content">
+				<div class="edu-title">
+					<img src="img/book.png" />
+					<span>职业技能</span>
+				</div>
+				<div class="edu-body-p" style="list-style:none">
+					<p>
+						<li>1、 熟练使用java进行开发，理解并熟练使用IO、集合、多线程、泛型等</li>
+						<li>2、 熟练使用Spring Boot，Spring Cloud配合Mybatis进行后端项目开发，了解SpringMVC，Spring，Struts，Hibernate等框架的使用。</li>
+						<li>3、 熟悉MySql，Redis数据库，掌握Sql常用优化技巧,掌握MySql的常见优化。了解MySql的存储过程的编写。</li>
+						<li>4、 熟悉Linux系统常用命令，能进行项目的的部署搭建，例如Tomcat、Nginx等服务器。</li>
+						<li>5、 了解使用各种中间件MyCat，ActivetMQ，Netty，Shiro，ElasticSearch。</li>
+						<li>6、 熟悉常用的项目管理工具，如Maven，git、SVN等</li>
+						<li>7、 了解Vue技术，有实际的经验，了解微信小程序，开发了“缅因猫的小屋”,已上线。</li>
+						<li>8、 持续学习中。对新兴技术充满兴趣，对学习保持热情</li>
+
+					</p>
+				</div>
 			</div>
-			<div class="header-right-top">
-				<img src="img/img.png" />
-				<li> <span>23岁</span> </li>
-				<li><span>苏州市吴中区</span></li>
-				<li> <span>15262149322</span></li>
-				<li> <span>1987281849@qq.com</span></li>
+			<div class="edu-content">
+				<div class="edu-title">
+					<img src="img/work.png" />
+					<span>项目经验</span>
+				</div>
+				<div class="edu-body-p">
+					<p>
+						<div style="min-width: 864px;height: 30px;text-align: center;margin-bottom: 5px;font-weight: bold;">
+							<span style="float: left;">2019.4-至今</span>
+							<span>江苏欣皓测试技术有限公司</span>
+							<span style="float: right;">软件部</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						入职后主要参与公司水利行业监测系统开发，针对项目种出现的各种问题进行对应的修改和对性能的优化。<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;截至目前主要负责了模拟机的开发上线测试工作，采用的技术栈为SpringBoot，目前该软件在我司应用广泛。监测软件在实际开发中使用了shiro，存储过程，数据库语句的优化，主要使用的框架是SSM，页面采用jsp和前后端分离两种。主要的运行环境为Linux。<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;主要项目如下：<br />
+						<li>数据模拟器==>JAVA后端开发</li>
+						<li>监测系统==>JAVA后端开发</li>
+						<li>微信小程序("缅因猫的小屋")==>小程序前端</li>
+
+						<div style="min-width: 864px;height: 30px;text-align: center;margin-bottom: 5px;font-weight: bold;">
+							<span style="float: left;">2018.10-2019.3</span>
+							<span>徐州再出发网络科技有限公司(实习)</span>
+							<span style="float: right;">研发部</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;主要工作是参与App的后端开发。负责整个项目的后端技术选型，数据库设计，接口的编写，并给前端提供接口文档 <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;主要项目列出如下：
+						<li>服装租赁商城==>JAVA后端开发</li>
+						<li>屋百全商城==>JAVA后端开发</li>
+						<li>分呗钱包==>JAVA后端开发</li>
+						<li>贷款超市==>JAVA后端开发</li>
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;在开发中，主要使用的技术架构是SSM搭配Mybatis的两种插件，使用PageHelper进行帮助分页，后台管理部分主要采用layui的模板。后面技术栈逐渐转成Spring
+						Boot,使用Redis来存储短信和进行session的共享，使用Nginx进行前后端分开部署，分别运行。在开发中遇到了一些性能上的问题，主要是通过加索引和抛开插件来解决的。使用git作为版本控制，然后Maven用来引入依赖和项目打包发行。有些项目使用了支付宝，微信支付接口，也有的项目使用三要素认证之类的认证接口。
+						<br />
+
+					</p>
+				</div>
 			</div>
-		</header>
-		
-
-		<div class="edu-content">
-			<div class="edu-title">
-				<img src="img/work.png" />
-				<span>项目经验</span>
+			<div class="edu-content">
+				<div class="edu-title">
+					<img src="img/work.png" />
+					<span>开源项目</span>
+				</div>
+				<div class="edu-body-p">
+					<p>
+						<li>SHH的前后端分离项目(商城)：https://github.com/tuboshu18/fruitMarket</li>
+						<li>微信小程序(资讯)：https://github.com/tuboshu18/weChatSmallProgram</li>
+					</p>
+				</div>
 			</div>
-			<div class="edu-body-p">
-				<p>
-				    <div style="min-width: 864px;height: 30px;text-align: center;margin-bottom: 5px;font-weight: bold;">
-						<span style="float: left;">2019.4-至今</span>
-						<span>江苏欣皓测试技术有限公司</span>
-						<span style="float: right;">软件部</span>
-					</div>
-					&nbsp;&nbsp;&nbsp;&nbsp;					
-					入职后主要参与公司水利行业监测系统开发，针对项目种出现的各种问题进行对应的修改和对性能的优化。<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;截至目前主要负责了模拟机的开发上线测试工作，采用的技术栈为SpringBoot，目前该软件在我司应用广泛。监测软件在实际开发中使用了shiro，存储过程，数据库语句的优化，主要使用的框架是SSM，页面采用jsp和前后端分离两种。主要的运行环境为Linux。<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;主要项目如下：<br/>
-					<li>1、数据模拟器-----------------------2019年4月至2018年7月------------------------JAVA后端开发</li>
-					<li>2、监测系统-------------------------2019年4月至今-------------------------------JAVA后端开发</li>
-					<li>3、微信小程序("缅因猫的小屋")-----2019年6月至2019年6月------------------------小程序前端</li>
+			<div class="edu-content">
+				<div class="edu-title">
+					<img src="img/edu.png" />
+					<span>教育背景</span>
+				</div>
+				<div class="edu-body-p">
+					<p>
+						<div style="min-width: 864px;height: 30px;text-align: center;font-weight: bottom: ;old;">
+							<span style="float: left;">2015.9-2019.6</span>
+							<span>徐州工程学院</span>
+							<span style="float: right;">应用化学（本科）</span>
+						</div>
+						<div>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							在校期间：学习了数据结构，数据库系统原理，JavaWeb技术，Web前端技术，Java中间件，Java框架技术等等，同时使用阿里云搭建个人网站，对网站的配置，部署运维有一点了解。
+						</div>
 
-					<div style="min-width: 864px;height: 30px;text-align: center;margin-bottom: 5px;font-weight: bold;">
-						<span style="float: left;">2018.10-2019.3</span>
-						<span>徐州再出发网络科技有限公司(实习)</span>
-						<span style="float: right;">研发部</span>
-					</div>
-
-					&nbsp;&nbsp;&nbsp;&nbsp;主要工作是参与App的后端开发。负责整个项目的后端技术选型，数据库设计，接口的编写，并给前端提供接口文档 <br/> 
-					&nbsp;&nbsp;&nbsp;&nbsp;主要项目列出如下：
-					<li>1、服装租赁商城&nbsp;&nbsp;&nbsp;&nbsp;2019年1月至2018年3月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA后端开发</li>
-					<li>2、屋百全商城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年12月至2019年1月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JAVA后端开发</li>
-					<li>3、分呗钱包&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年11月至2018年12月&nbsp;&nbsp;&nbsp;&nbsp;JAVA后端开发</li>
-					<li>4、贷款超市&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年10月至2018年11月&nbsp;&nbsp;&nbsp;&nbsp;JAVA后端开发</li>
-					<br /> &nbsp;&nbsp;&nbsp;&nbsp;在开发中，主要使用的技术架构是SSM搭配Mybatis的两种插件，使用PageHelper进行帮助分页，后台管理部分主要采用layui的模板。后面技术栈逐渐转成Spring Boot,使用Redis来存储短信和进行session的共享，使用Nginx进行前后端分开部署，分别运行。在开发中遇到了一些性能上的问题，主要是通过加索引和抛开插件来解决的。使用git作为版本控制，然后Maven用来引入依赖和项目打包发行。有些项目使用了支付宝，微信支付接口，也有的项目使用三要素认证之类的认证接口。
-					<br />
-
-				</p>
+					</p>
+				</div>
 			</div>
+			<div class="edu-content">
+				<div class="edu-title">
+					<img src="img/jn.png" />
+					<span>技能证书</span>
+				</div>
+				<div class="edu-body-p">
+					<p>
+						<li>职业资格证：初级-程序员；</li>
+						<li>英语：CET-4；</li>
+						<li>驾驶：C照；</li>
+					</p>
+				</div>
+			</div>
+
+			<div style="width: 1024px;height: 40px;"></div>
 		</div>
-		<div class="edu-content">
-			<div class="edu-title">
-				<img src="img/book.png" />
-				<span>职业技能</span>
-			</div>
-			<div class="edu-body-p" style="list-style:none">
-				<p>
-					<li>1、 熟练使用java进行开发，理解并熟练使用IO、集合、多线程、泛型等</li>
-					<li>2、 熟练使用Spring Boot，Spring Cloud配合Mybatis进行后端项目开发，了解SpringMVC，Spring，Struts，Hibernate等框架的使用。</li>
-					<li>3、 熟悉MySql，Redis数据库，掌握Sql常用优化技巧,掌握MySql的常见优化。了解MySql的存储过程的编写。</li>
-					<li>4、 熟悉Linux系统常用命令，能进行项目的的部署搭建，例如Tomcat、Nginx等服务器。</li>
-					<li>5、 了解使用各种中间件MyCat，ActivetMQ，Netty，Shiro，ElasticSearch。</li>
-					<li>6、 熟悉常用的项目管理工具，如Maven，git、SVN等</li>
-					<li>7、 了解Vue技术，有实际的经验，了解微信小程序，开发了“缅因猫的小屋”,已上线。</li>
-					<li>8、 持续学习中。对新兴技术充满兴趣，对学习保持热情</li>
-
-				</p>
-			</div>
-		</div>
-		<div class="edu-content">
-			<div class="edu-title">
-				<img src="img/edu.png" />
-				<span>教育背景</span>
-			</div>
-			<div class="edu-body-p">
-				<p>
-					<div style="min-width: 864px;height: 30px;text-align: center;font-weight: bottom: ;old;">
-						<span style="float: left;">2015.9-2019.6</span>
-						<span>徐州工程学院</span>
-						<span style="float: right;">应用化学（本科）</span>
-					</div>
-					<div>
-						&nbsp;&nbsp;&nbsp;&nbsp; 在校期间：学习了数据结构，数据库系统原理，JavaWeb技术，Web前端技术，Java中间件，Java框架技术等等，同时使用阿里云搭建个人网站，对网站的配置，部署运维有一点了解。
-					</div>
-		
-				</p>
-			</div>
-		</div>
-		<div class="edu-content">
-			<div class="edu-title">
-				<img src="img/jn.png" />
-				<span>技能证书</span>
-			</div>
-			<div class="edu-body-p">
-				<p>
-					<li>职业资格证：初级-程序员；</li>
-					<li>英语：CET-4；</li>
-					<li>驾驶：C照；</li>
-				</p>
-				
-			</div>
-		</div>
-		
-		<div style="width: 1024px;height: 40px;"></div>
-       </div>
+		<p id="printjl"><a onclick="printpage()"><img src="img/print.png" /></a></p>
 	</body>
-
 </html>
